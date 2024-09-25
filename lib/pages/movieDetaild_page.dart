@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ticket_station/model/movie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:ticket_station/pages/booking_page.dart';
+import 'package:ticket_station/widget/pelyer.dart';
 
 
 class Movie_Details extends StatefulWidget {
@@ -15,8 +16,9 @@ class Movie_Details extends StatefulWidget {
   State<Movie_Details> createState() => _Movie_DetailsState();
 }
 
-class _Movie_DetailsState extends State<Movie_Details> {
-  @override
+class _Movie_DetailsState extends State<Movie_Details> 
+{
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +47,7 @@ class _Movie_DetailsState extends State<Movie_Details> {
         (
           style: ElevatedButton.styleFrom
           (
-            primary: Colors.black,
+            backgroundColor: Colors.black,
             shape: RoundedRectangleBorder
             (
               borderRadius: BorderRadius.circular(12)
@@ -59,11 +61,13 @@ class _Movie_DetailsState extends State<Movie_Details> {
               )
               );
           }, 
-          child: Text("Play")
+          child: Text("Play" , style: TextStyle(color: Colors.white),)
         ) ,
       ),
+
         extendBodyBehindAppBar: true,
         body: ListView(
+          // physics: BouncingScrollPhysics(),
           children: [
           Stack(
             children: [
@@ -283,14 +287,16 @@ class _Movie_DetailsState extends State<Movie_Details> {
                                               ],
                                             )
                                             ),
+                                            
                                       );
                           },
                         ),
                       ),
+
                       
                     
                       SizedBox(
-                        height: 90,
+                        height: 120,
                       ),
               ],
             ),

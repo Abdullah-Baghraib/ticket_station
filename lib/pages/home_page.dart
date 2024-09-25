@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                             )
                             ).toList(),
                             options: CarouselOptions(
-                            enableInfiniteScroll: false,
+                            enableInfiniteScroll: true,
                             viewportFraction: 0.75,
                             height: MediaQuery.of(context).size.height * 0.7,
                             enlargeCenterPage: true,
@@ -196,7 +196,7 @@ class _HomePageState extends State<HomePage> {
                 IconButton
                 (
                   onPressed: (){Navigator.of(context).pushReplacementNamed("Tickets");}, 
-                  icon: Icon(CupertinoIcons.down_arrow, color: Colors.grey.shade200,size: 26)
+                  icon: Icon(CupertinoIcons.ticket, color: Colors.grey.shade200,size: 26)
                 ),
                 IconButton
                 (

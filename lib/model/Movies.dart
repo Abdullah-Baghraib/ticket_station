@@ -11,8 +11,7 @@ List<Movie> movies =
     genres:["Action","Sci-fi"],
     des:"After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe",
     time:"3h 2m",
-    tralier: "O6x-TyXDaiooG-i9",
-    // tralier: "https://youtu.be/TcMBFSGVi1c?si=O6x-TyXDaiooG-i9",
+    tralier: "https://youtu.be/TcMBFSGVi1c?si=O6x-TyXDaiooG-i9",
     cast: ["images/rbert.jpg","images/chrisEvans.jpg","images/chris.jpg","images/elizabeth.jpg"],
     castNames: ["Rbert Downey","Chris Evans","Chris Hemsworth","Elizabeth Olsen"]
   ),
@@ -25,8 +24,7 @@ List<Movie> movies =
     genres:["Comedy","Indie-film"],
     des:"A nurse works tirelessly to keep her family afloat after her husband loses his job. She also maintains a turbulent bond with a teenage daughter who is just like her: loving, strong-willed and deeply opinionated.",
     time:"1h 34m",
-    tralier: "GGDMUt7D4WZ-R_mE",
-    // tralier: "https://youtu.be/cNi_HC839Wo?si=GGDMUt7D4WZ-R_mE",
+    tralier: "https://youtu.be/cNi_HC839Wo?si=GGDMUt7D4WZ-R_mE",
     cast: ["images/saoirse.jpg","images/lucas.jpg","images/timothee.jpg","images/beanie.jpg"],
     castNames: ["Saoirse Ronan","Lucas Hedges","Timothee Chalamet","Beanie Feldstein"]
     
@@ -40,8 +38,7 @@ List<Movie> movies =
     genres:["Romance","Drama"],
     des:"In the years after the Civil War, Jo March lives in New York and makes her living as a writer, while her sister Amy studies painting in Paris. Amy has a chance encounter with Theodore, a childhood crush who proposed to Jo but was ultimately rejected. Their oldest sibling, Meg, is married to a schoolteacher, while shy sister Beth develops a devastating illness that brings the family back together.",
     time:"2h 15m",
-    tralier: "BGIrFNLafF9gRzP2",
-    // tralier: "https://youtu.be/AST2-4db4ic?si=BGIrFNLafF9gRzP2",
+    tralier: "https://youtu.be/AST2-4db4ic?si=BGIrFNLafF9gRzP2",
     cast: ["images/saoirse.jpg","images/emma.jpg","images/timothee.jpg","images/florence.jpg"],
     castNames: ["Saoirse Ronan","Florence Pugh","Timothee Chalamet","Emma Watson"]
     
@@ -69,8 +66,7 @@ List<Movie> movies =
     genres:["Action","Thriller"],
     des:"When the CIA's top asset -- his identity known to no one -- uncovers agency secrets, he triggers a global hunt by assassins set loose by his ex-colleague.",
     time:"2h 2m",
-    // tralier: "https://youtu.be/BmllggGO4pM?si=PeueGFCTFjVauOcP",
-    tralier: "PeueGFCTFjVauOcP",
+    tralier: "https://youtu.be/BmllggGO4pM?si=PeueGFCTFjVauOcP",
     cast: ["images/ryan.jpg","images/ana.jpg","images/timothee.jpg","images/saoirse.jpg"],
     castNames: ["Ryan Gosling","Ana de Armas","Chris Evans","Saoirse Ronan"]
     

@@ -196,7 +196,7 @@ class _Sercsh_PageState extends State<Sercsh_Page> {
                   IconButton
                   (
                     onPressed: (){Navigator.of(context).pushReplacementNamed("Tickets");}, 
-                    icon: Icon(CupertinoIcons.down_arrow, color: Colors.grey.shade200,size: 26)
+                    icon: Icon(CupertinoIcons.ticket, color: Colors.grey.shade200,size: 26)
                   ),
                   IconButton
                   (

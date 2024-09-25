@@ -56,104 +56,135 @@ class Profile_Page extends StatelessWidget {
               scrollDirection: Axis.vertical,
         padding: EdgeInsets.all(20),
         child: Column(
-          children: [
-
-            Icon(
-            CupertinoIcons.person_alt_circle,
-            size: 130,
-            color: Colors.black,
-
-            ),
-            SizedBox(height: 15),
-
-            Text(
-            'Saleh almas',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-
-            ),
-            ),
-            SizedBox(height: 16.0),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Divider(height: 25),
-            ),
-            SizedBox(height: 16.0),
-            ListTile(
-
-            trailing: Icon(Icons.alternate_email_outlined),
-            title: Text('saleh_almas@gmail.com'),
-
-              //tileColor: Colors.red,
-              shape: RoundedRectangleBorder(
-
-                borderRadius: BorderRadius.circular(12),
-                side: BorderSide(color: Colors.black,width: 1),
-              )
-
+          children: 
+          [
+            ClipRRect
+            (
+              
+              borderRadius: BorderRadius.circular(80),
+              child: Container( color: const Color.fromARGB(255, 209, 254, 156),child: Image.asset("images/prof.png" , width: 150, height: 150,)),
             ),
 
-          SizedBox(height: 25),
-            ListTile(
-            leading: Icon(Icons.home),
-            title: Text('AL_shahr'),
-            //tileColor: Colors.red,
-              shape: RoundedRectangleBorder(
+            SizedBox(height: 10,),
+            Text("Abdullah" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),),
+            
+            SizedBox(height: 5,),
 
-                borderRadius:BorderRadius.circular(12),
-                side: BorderSide(color: Colors.black,width: 1),
-              )
-            ),
-            SizedBox(height: 25),
-            ListTile(
-              leading: Icon(Icons.phone),
-              title: Text('+967 777 359 678'),
-              //tileColor: Colors.red,
-              shape: RoundedRectangleBorder(
+            Text("Abdullah@gmail.com" , style: TextStyle(fontSize: 15 , color: Colors.blueGrey ),),
 
-                borderRadius:BorderRadius.circular(12),
-                side: BorderSide(color: Colors.black,width: 1),
-              )
-            ),
-
-            SizedBox(height: 25),
-            ListTile(
-              leading: Icon(Icons.location_on_outlined),
-              title: Text("Riyadh"),
-              shape: RoundedRectangleBorder(
-
-                borderRadius:BorderRadius.circular(12),
-                side: BorderSide(color: Colors.black,width: 1),
-              )
-            ),
-
-            SizedBox(height: 25),
-
-            Container(
-
-            padding:EdgeInsets.fromLTRB(90, 20, 90, 0),
-
-            child: ListTile(
-
-                leading: Icon(Icons.exit_to_app,color: Colors.red,),
-                title: Text(
-                  'Log Out',style: TextStyle(
-                  color: Colors.red , 
+            SizedBox(height: 20,),
+            MaterialButton
+                (
+                  padding: EdgeInsets.symmetric(horizontal: 50 , ),
+                  onPressed: () 
+                  {
+                  },
+                  height: 50,
+                  color: Colors.black,
+                  shape: RoundedRectangleBorder
+                  (
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                  child: Text("Edit profile" , style: TextStyle(color: Colors.white , fontSize: 18 ,),),
                 ),
 
+                SizedBox(height: 30,),
+                
+                Container
+                (
+                  decoration: BoxDecoration
+                  (
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.grey.shade300 )
+                  ),
+                  child: Column
+                  (
+                    children:
+                    [
+                      ListTile
+                      (
+                        title: Text("Booking History" , style: TextStyle(color: Colors.black, ),),
+                        leading: Icon(Icons.history , color: Colors.black,),
+                        trailing: Icon(Icons.arrow_forward , color: Colors.grey[400],),
+                      ), 
+
+                      Container
+                      (
+                        margin: EdgeInsets.symmetric(horizontal: 30),
+                        child:  Divider(color: Colors.grey[400],),
+                      ),
+
+                                            ListTile
+                      (
+                        title: Text("Watch List" , style: TextStyle(color: Colors.black, ),),
+                        leading: Icon(Icons.tv_rounded , color: Colors.black,),
+                        trailing: Icon(Icons.arrow_forward , color: Colors.grey[400],),
+                      ), 
+                    ]
+                  ),
                 ),
-                          
-                onTap: () => Navigator.pushNamedAndRemoveUntil(context, "login", (route) => false),
-                  //tileColor: Colors.red,
-                  shape: RoundedRectangleBorder(
 
-                    borderRadius: BorderRadius.circular(12),
-                    side: BorderSide(color: Colors.red,width: 1),
-                  )
+                SizedBox(height: 50,),
+                Container
+                (
+                  decoration: BoxDecoration
+                  (
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.grey.shade300 )
+                  ),
+                  child: Column
+                  (
+                    children:
+                    [
+                      ListTile
+                      (
+                        title: Text("Experuences" , style: TextStyle(color: Colors.black, ),),
+                        trailing: Icon(Icons.arrow_forward , color: Colors.grey[400],),
+                      ), 
 
-              ),
-            ),
+                      Container
+                      (
+                        margin: EdgeInsets.symmetric(horizontal: 30),
+                        child:  Divider(color: Colors.grey[400],),
+                      ),
+
+                                            ListTile
+                      (
+                        title: Text("Contact Us" , style: TextStyle(color: Colors.black, ),),
+                        trailing: Icon(Icons.arrow_forward , color: Colors.grey[400],),
+                      ), 
+                    ]
+                  ),
+                ),
+                SizedBox(height: 30,),
+                Container
+                (
+                  decoration: BoxDecoration
+                  (
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.grey.shade300 )
+                  ),
+                  child: Column
+                  (
+                    children:
+                    [
+                      ListTile
+                      (
+                        title: Text("Logout" , style: TextStyle(color: Colors.red, ),),
+                        trailing: Icon(Icons.logout_outlined , color: Colors.redAccent,),
+                      ), 
+ 
+                    ]
+                  ),
+                ),
+                SizedBox(height: 30,),
+
+            
+
+
             SizedBox(height: 100,)
           ],
           

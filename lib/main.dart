@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_station/pages/home_page.dart';
 import 'package:ticket_station/pages/login/login.dart';
+import 'package:ticket_station/pages/login/register.dart';
 import 'package:ticket_station/pages/login/start.dart';
 import 'package:ticket_station/pages/notification_page.dart';
 import 'package:ticket_station/pages/profile_Page.dart';
@@ -26,10 +27,11 @@ class MyApp extends StatelessWidget {
         "Prpfile" :(context) => Profile_Page(),
         "Notification" :(context) => Notificationn(),
         "login" :(context) => Login(),
+        "Register" :(context) => Register(),
       },
       
       debugShowCheckedModeBanner: false,
-      home: Start_app1(),
+      home: Login(),
     );
   }
 }
